@@ -1,0 +1,47 @@
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(white, rgb(235, 235, 127));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 350px;
+    height: auto;
+}
+
+.gridSize button {
+    height: 60px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: rgb(235, 235, 127);
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+.gridSize {
+    display: flex;
+}
+
+.column {
+    background-color: #eeeeee;
+    border: 1px solid gray;
+}
+
+#gameboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px 180px 50px;
+}
