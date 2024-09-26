@@ -37,11 +37,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: rgb(235, 235, 127);
     border-radius: 20px;
     margin: 20px;
+    transition: .3s all;
+    box-shadow: 0 0 5px 1px gray;
 }
+
 .input {
     height: 500px;
 

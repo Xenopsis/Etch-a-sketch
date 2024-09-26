@@ -15,10 +15,12 @@ rainbowBtn.addEventListener('click', () => {
     if (rainbowBtn.textContent === "Rainbow: Off"){
         rainbowBtn.textContent = "Rainbow: On"
         rainbowBtn.style.backgroundColor = "rgb(209, 209, 111)"
+        rainbowBtn.style.boxShadow = "none"
         isRainbow = true;
     }else if (rainbowBtn.textContent === "Rainbow: On"){
         rainbowBtn.textContent = "Rainbow: Off"
         rainbowBtn.style.backgroundColor = "rgb(235, 235, 127)"
+        rainbowBtn.style.boxShadow = "0 0 5px 1px gray"
         isRainbow = false;
     }
 })
@@ -27,10 +29,12 @@ eraser.addEventListener('click', () => {
     if (eraser.textContent === "Eraser: Off"){
         eraser.textContent = "Eraser: On"
         eraser.style.backgroundColor = "rgb(209, 209, 111)"
+        eraser.style.boxShadow = "none"
         isEraser = true
     }else if (eraser.textContent === "Eraser: On"){
         eraser.textContent = "Eraser: Off"
         eraser.style.backgroundColor = "rgb(235, 235, 127)"
+        eraser.style.boxShadow = "0 0 5px 1px gray"
         isEraser = false
     }
 })
@@ -69,8 +73,13 @@ function createGrid (size){
 }
     
 createGrid(size)
-
-clear.addEventListener('click', () => {
+clear.addEventListener('mousedown', () => {
+    clear.style.backgroundColor = "rgb(209, 209, 111)"
+    clear.style.boxShadow = "none"
+})
+clear.addEventListener('mouseup', () => {
+    clear.style.backgroundColor = "rgb(235, 235, 127)"
+    clear.style.boxShadow = "0 0 5px 1px gray"
     gameboard.innerHTML = ""
     createGrid(size)
 })
