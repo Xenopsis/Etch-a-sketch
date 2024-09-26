@@ -47,7 +47,6 @@ function createGrid (size){
             columnSize.classList.add("column")
             columnSize.style.height = (`${pxWidth / size}px`)
             columnSize.style.width = (`${pxWidth / size}px`)
-            columnSize.style.margin = (`${(pxWidth / size) / 40}px`)
             rowSize.appendChild(columnSize)
         }
 
@@ -75,6 +74,7 @@ clear.addEventListener('click', () => {
     gameboard.innerHTML = ""
     createGrid(size)
 })
+
 gridSize.addEventListener("input", () => {
     size = gridSize.value;
     gameboard.innerHTML = ""
