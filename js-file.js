@@ -58,7 +58,7 @@ function createGrid (size){
     box.forEach((div) => {
         div.addEventListener('mouseover', () => {
         if (isEraser === true){
-            div.style.backgroundColor = "#eeeeee"
+            div.style.backgroundColor = "white"
         }else if (isRainbow === true){
             div.style.backgroundColor = randomColor()
         }else if (isRainbow === false){
