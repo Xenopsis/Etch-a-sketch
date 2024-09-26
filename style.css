@@ -18,20 +18,43 @@ header {
     width: 350px;
     height: auto;
 }
-
-.gridSize button {
+.slider {
+    background: rgb(85, 84, 84);
+    -webkit-appearance: none;
+    height: 6px;
+    width: 200px;
+    display: flex;
+    margin: 25px;    
+}
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input button {
     height: 60px;
-    width: 100px;
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid black;
     background-color: rgb(235, 235, 127);
     border-radius: 20px;
-    margin: 0px 20px;
+    margin: 20px;
+}
+.input {
+    height: 500px;
+
+}
+.sizeText{
+    font-size: 20px;
+    font-weight: 700;
 }
 .gridSize {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
 }
 
 .column {
@@ -43,5 +66,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 50px 180px 50px;
+    padding: 50px;
+    margin-bottom: 125px;
+    background-color: crimson;
+    border-radius: 25px;
 }
